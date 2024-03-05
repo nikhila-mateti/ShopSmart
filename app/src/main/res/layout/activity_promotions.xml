@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Add your UI elements for displaying promotions and deals, such as TextViews, ImageView, etc. -->
+    <!--android:src="@drawable/promotion_image_placeholder"-->
+    <ImageView
+        android:id="@+id/imagePromotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textPromotionDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Special Promotion! Buy 1 Get 1 Free." />
+
+    <Button
+        android:id="@+id/btnViewPromotions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All Promotions" />
+</RelativeLayout>
