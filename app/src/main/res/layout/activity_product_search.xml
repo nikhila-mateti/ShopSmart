@@ -8,10 +8,22 @@
         android:id="@+id/editTextSearchProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search Product" />
+        android:hint="Search Product"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"/>
 
     <RecyclerView
         android:id="@+id/recyclerViewProductList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/editTextSearchProduct"
+        android:layout_marginTop="8dp"/>
+    <!-- item_product.xml -->
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
 </RelativeLayout>
