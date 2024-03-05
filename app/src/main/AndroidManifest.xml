@@ -13,10 +13,10 @@
         android:theme="@style/Theme.ShopSmart"
         tools:targetApi="31">
         <activity
-            android:name=".ProductSearch"
+            android:name=".PurchaseHistory"
             android:exported="false" />
         <activity
-            android:name=".PurchaseHistory"
+            android:name=".ProductSearch"
             android:exported="false" />
         <activity
             android:name=".SharedLists"
