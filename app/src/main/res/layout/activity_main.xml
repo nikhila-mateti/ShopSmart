@@ -23,14 +23,25 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="15dp"
-                android:drawableStart="@drawable/baseline_menu_24"/>
+                android:drawableStart="@drawable/baseline_menu_24"
+                android:drawablePadding="15dp"
+                android:fontFamily="serif"/>
 
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="53dp"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/logo1"
+                />
 
 
         </RelativeLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+
+
 
 
 
