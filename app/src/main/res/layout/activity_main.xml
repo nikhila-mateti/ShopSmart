@@ -54,7 +54,19 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="15dp"
                 />
-            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/search_backgroud"
+                />
+
 
         </RelativeLayout>
 
