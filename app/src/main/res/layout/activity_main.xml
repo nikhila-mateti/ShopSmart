@@ -64,13 +64,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
-                android:background="@drawable/search_backgroud"
-                />
-
+                android:background="@drawable/search_background"
+                android:drawableStart="@drawable/baseline_search_24"
+                android:drawableEnd="@drawable/baseline_camera_24"
+                android:drawablePadding="15dp"
+                android:hint="Search"
+                android:imeOptions="actionDone"
+                android:padding="6dp"/>
 
         </RelativeLayout>
-
     </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 
 
