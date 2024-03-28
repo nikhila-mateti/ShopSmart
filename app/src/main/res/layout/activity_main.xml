@@ -35,6 +35,26 @@
                 android:drawableStart="@drawable/logo1"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toStartOf="@+id/cart"
+                android:drawableStart="@drawable/baseline_mic_24"
+                android:drawablePadding="15dp"
+                />
+            <TextView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:drawablePadding="11dp"
+                android:drawableStart="@drawable/baseline_shopping_cart_24"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                />
+            
 
         </RelativeLayout>
 
