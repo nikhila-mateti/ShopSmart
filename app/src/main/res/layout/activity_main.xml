@@ -106,13 +106,26 @@
                 tools:itemCount="2"
                 tools:listitem="@layout/item_layout2"/>
 
-            <com.smartiest.autoimageslider.IndicatorView.PageIndicatorView
-                android:id="@+id/indicator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|bottom"
-                app:piv_padding="10dp"
-                app:piv_radius="5dp" />
+<!--            <com.smarteist.autoimageslider.SliderView-->
+<!--                android:id="@+id/main_image_slider"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                app:sliderAnimationDuration="500"-->
+<!--                app:sliderAutoCycleDirection="back_and_forth"-->
+<!--                app:sliderAutoCycleEnabled="true"-->
+<!--                app:sliderIndicatorAnimationDuration="500"-->
+<!--                app:sliderIndicatorGravity="center_horizontal|bottom"-->
+<!--                app:sliderIndicatorMargin="15dp"-->
+<!--                app:sliderIndicatorOrientation="horizontal"-->
+<!--                app:sliderIndicatorPadding="3dp"-->
+<!--                app:sliderIndicatorRadius="1.5dp"-->
+<!--                app:sliderIndicatorSelectedColor="@android:color/white"-->
+<!--                app:sliderIndicatorUnselectedColor="@android:color/primary_text_light"-->
+<!--                app:sliderScrollTimeInSec="3"-->
+<!--                app:sliderStartAutoCycle="true"/>-->
+
 
 
 
