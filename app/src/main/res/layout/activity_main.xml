@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_marginTop="6dp"
@@ -10,7 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-=======
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -115,7 +115,12 @@
 <!--                app:piv_radius="5dp" />-->
 
 
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_layout"/>
 
 
         </LinearLayout>
@@ -130,4 +135,4 @@
 
 
 </LinearLayout>
->>>>>>> f980fede1fac48f103045eb07e0e97e14f0a5642
+
