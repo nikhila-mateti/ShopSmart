@@ -12,6 +12,7 @@ public class ProductSearch extends AppCompatActivity {
 
     private EditText editTextSearchProduct;
     private RecyclerView recyclerViewProductList;
+    private ProductAdapter productAdapter; // Added adapter attribute
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +21,12 @@ public class ProductSearch extends AppCompatActivity {
 
         editTextSearchProduct = findViewById(R.id.editTextSearchProduct);
         recyclerViewProductList = findViewById(R.id.recyclerViewProductList);
+        
+        // Initialize RecyclerView adapter
+        productAdapter = new ProductAdapter(this);
+        recyclerViewProductList.setAdapter(productAdapter);
 
-        // Set up RecyclerView and Adapter for product search results
+        // Set up RecyclerView layout manager and other configurations
 
         // Implement search functionality
         editTextSearchProduct.addTextChangedListener(new TextWatcher() {
@@ -30,7 +35,8 @@ public class ProductSearch extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // Update product search results based on user input
+                // Filter product list based on user input
+                productAdapter.getFilter().filter(s.toString());
             }
 
             @Override
