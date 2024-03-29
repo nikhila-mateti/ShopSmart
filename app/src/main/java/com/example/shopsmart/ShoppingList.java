@@ -1,18 +1,10 @@
-package com.example.shopsmart;
-
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
 public class ShoppingList extends AppCompatActivity {
 
     private RecyclerView recyclerViewShoppingList;
-    private Button btnAddItem, btnSaveList;
+    private Button btnAddItem, btnSaveList, btnCheckout;
+    private TextView txtItemCount, txtTotalCost;
+    private ShoppingListAdapter adapter;
+    private List<ShoppingItem> shoppingItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,26 +12,26 @@ public class ShoppingList extends AppCompatActivity {
         setContentView(R.layout.activity_shopping_list);
 
         recyclerViewShoppingList = findViewById(R.id.recyclerViewShoppingList);
+        txtItemCount = findViewById(R.id.txtItemCount);
+        txtTotalCost = findViewById(R.id.txtTotalCost);
+        btnCheckout = findViewById(R.id.btnCheckout);
 
-        Button btnAddItem = findViewById(R.id.btnAddItem);
+        btnAddItem = findViewById(R.id.btnAddItem);
         btnAddItem.setOnClickListener(view -> navigateToProductSearchActivity());
 
-        Button btnSaveList = findViewById(R.id.btnSaveList);
+        btnSaveList = findViewById(R.id.btnSaveList);
         btnSaveList.setOnClickListener(view -> navigateToPromotionsActivity());
+
+        // Initialize shoppingItems and adapter
+        shoppingItems = new ArrayList<>();
+        adapter = new ShoppingListAdapter(shoppingItems);
+        recyclerViewShoppingList.setAdapter(adapter);
+
+        // Set up RecyclerView layout manager and item decorator
+        recyclerViewShoppingList.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewShoppingList.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
     }
 
-    private void navigateToProductSearchActivity() {
-        Intent intent = new Intent(this, ProductSearch.class);
-        startActivity(intent);
-    }
-
-    private void navigateToPromotionsActivity() {
-        Intent intent = new Intent(this, Promotions.class);
-        startActivity(intent);
-    }
-
-    // Set up RecyclerView and Adapter for shopping list items
-
+    // Other methods for navigation and RecyclerView setup
 
 }
-
