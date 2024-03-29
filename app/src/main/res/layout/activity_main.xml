@@ -106,13 +106,14 @@
                 tools:itemCount="2"
                 tools:listitem="@layout/item_layout2"/>
 
-            <com.smartiest.autoimageslider.IndicatorView.PageIndicatorView
-                android:id="@+id/indicator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|bottom"
-                app:piv_padding="10dp"
-                app:piv_radius="5dp" />
+<!--            <com.smartiest.autoimageslider.IndicatorView.PageIndicatorView-->
+<!--                android:id="@+id/indicator"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center|bottom"-->
+<!--                app:piv_padding="10dp"-->
+<!--                app:piv_radius="5dp" />-->
+
 
 
 
