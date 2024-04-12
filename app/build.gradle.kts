@@ -16,6 +16,8 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -36,6 +38,7 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
     // dependencies to be added here
+
     implementation ("com.github.smarteist:autoimageslider:1.4.0")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
