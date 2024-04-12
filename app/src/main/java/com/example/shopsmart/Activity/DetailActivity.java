@@ -1,4 +1,4 @@
-package com.example.project1752.Activity;
+package com.example.shopsmart;
 
 import android.os.Bundle;
 import android.os.Handler;
