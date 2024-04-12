@@ -1,10 +1,10 @@
-package com.example.project1752.Helper;
+package com.example.shopsmart.Helper;
 
 import android.content.Context;
 import android.widget.Toast;
 
 
-import com.example.project1752.Domain.ItemsDomain;
+import com.example.shopsmart.Domain.ItemsDomain;
 
 import java.util.ArrayList;
 
