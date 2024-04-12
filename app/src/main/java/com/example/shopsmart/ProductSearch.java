@@ -10,7 +10,23 @@ import android.widget.EditText;
 
 public class ProductSearch extends AppCompatActivity {
 
-  
+    private EditText editTextSearchProduct;
+    private RecyclerView recyclerViewProductList;
+    private ProductAdapter productAdapter; // Added adapter attribute
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_product_search);
+
+        editTextSearchProduct = findViewById(R.id.editTextSearchProduct);
+        recyclerViewProductList = findViewById(R.id.recyclerViewProductList);
+        
+        // Initialize RecyclerView adapter
+        productAdapter = new ProductAdapter(this);
+        recyclerViewProductList.setAdapter(productAdapter);
+
+        // Set up RecyclerView layout manager and other configurations
 
         // Implement search functionality
         editTextSearchProduct.addTextChangedListener(new TextWatcher() {
