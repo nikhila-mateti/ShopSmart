@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recyclerViewShoppingList" type="id" />
+    <item name="btnAddItem" type="id" />
+    <item name="btnSlideItem" type="id" />
+    <item name="btnSaveList" type="id" />
+    <item name="btnSaveItem" type="id" />
+    <item name="btnSaveLists" type="id" />
+    <item name="btnSaveListss" type="id" />
+</resources>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,9 +13,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShopSmart"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".ShoppingList"
+            android:name=".CategoryDomain"
+            android:exported="false" />
+        <activity
+            android:name=".Domain.SliderItems"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewDomain"
+            android:exported="false" />
+        <activity
+            android:name=".Domain.ItemsDomain"
+            android:exported="false" />
+        <activity
+            android:name=".Domain.CategoryDomain"
+            android:exported="false" />
+        <activity
+            android:name=".Domain.SliderItems"
+            android:exported="false" />
+        <activity
+            android:name=".Domain.CategoryDomain"
+            android:exported="false" />
+        <activity
+            android:name=".Domain.ReviewDomain"
+            android:exported="false" />
+        <activity
+            android:name=".Domain.ItemsDomaim"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter.CategoryAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter.CartAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Domain.SliderItems$ShoppingList"
             android:exported="false" />
         <activity
             android:name=".UserAuthentication"
@@ -25,7 +62,6 @@
         <activity
             android:name=".ProductSearch"
             android:exported="false" />
-
         <activity
             android:name=".Promotions"
             android:exported="false" />
@@ -34,7 +70,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
