@@ -1,13 +1,8 @@
 package com.example.shopsmart.adapter;
 
-import android.content.Context;
 
-import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -16,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.request.RequestOptions;
+
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.Viewholder> {
     ArrayList<ItemsDomain> listItemSelected;
@@ -77,3 +73,4 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.Viewholder> {
         }
     }
 }
+
